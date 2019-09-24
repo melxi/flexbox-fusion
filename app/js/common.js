@@ -1,14 +1,26 @@
-$(document).ready(function() {
-  console.log('hello');
-  
-  var swiper = new Swiper('.swiper-container', {
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container', {
+    // Optional parameters
     slidesPerView: 1,
-    loop: true,
-    effect: 'fade',
-    centeredSlides: true,
     pagination: {
-      el: '.swiper-pagination',
-      clickable: true
+    	el: '.swiper-pagination',
+    	clickable: true
     },
-  });
-})
+    effect: 'fade',
+    loop: true
+  })
+});
+
+$(document).ready(function () {
+  //initialize swiper when document ready
+  var mySwiper = new Swiper ('.swiper-container1', {
+    // Optional parameters
+    slidesPerView: 1,
+    pagination: {
+    	el: '.swiper-pagination1',
+    	clickable: true
+    },
+    loop: true
+  })
+});
