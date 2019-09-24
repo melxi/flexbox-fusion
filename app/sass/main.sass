@@ -186,6 +186,63 @@ html
       font-size: 1.4rem
       line-height: 2.7rem
       margin-bottom: 2.7rem
+
+.portfolio
+  background-color: #181818
+  padding-top: 15rem
+  height: 951px
+  .container
+    position: relative
+  .mini-caption
+    position: absolute
+    top: 24%
+    left: 1.3%
+    color: #f7ac53
+    @include opensemi
+    font-size: 1.4rem
+    text-transform: uppercase
+    &::before
+      content: ''
+      position: absolute
+      bottom: 4rem
+      left: 2px
+      width: 2px
+      height: 125px
+      background-color: #f7ac53
+  .swiper-container
+    width: 100%
+    padding: 0 185px
+  .swiper-slide
+    position: relative
+    width: 100%
+    height: 600px
+    background-color: red
+    .title
+      position: absolute
+      top: 30%
+      left: -21.5%
+      color: #ffffff
+      text-shadow: 0 0 10px rgba(24, 24, 24, 0.5)
+      @include merrireg
+      font-size: 5.5rem
+      letter-spacing: 0.2px
+    &:nth-child(3)
+      background-color: yellow
+  .swiper-pagination
+    position: absolute
+    bottom: -50px
+    left: 50%
+    transform: translate(-50%)
+    &-bullet
+      width: 29px
+      height: 3px
+      margin: 0 2.3rem
+      background-color: #4a4a4a
+      opacity: 1
+      border-radius: 0
+      &-active
+        background-color: #f7ac53
+
         
 
 
