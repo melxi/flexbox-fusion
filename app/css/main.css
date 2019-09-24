@@ -114,3 +114,62 @@ html {
       padding-left: 1.5rem;
       padding-right: 1.7rem;
       width: 100%; }
+
+.services {
+  background-color: #202020;
+  padding-bottom: 14.8rem; }
+  .services .mini-caption {
+    position: relative;
+    padding-top: 13.3rem;
+    width: 100%;
+    color: #f7ac53;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 4rem;
+    text-transform: uppercase;
+    text-align: center; }
+    .services .mini-caption::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 50%;
+      translate: transform(-50%);
+      height: 125px;
+      width: 2px;
+      background-color: #f7ac53; }
+  .services h2 {
+    margin-top: 1.3rem;
+    width: 100%;
+    text-align: center;
+    color: #ffffff;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 4rem;
+    line-height: 6.5rem; }
+  .services-items {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-top: 10.8rem;
+    padding-left: 7.5rem;
+    padding-right: 8.5rem; }
+  .services-item .caption {
+    color: #ffffff;
+    font-family: 'Merriweather', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 3rem;
+    line-height: 6.5rem;
+    margin-top: 1.6rem; }
+  .services-item .descr {
+    max-width: 230px;
+    color: #bbbbbb;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1.4rem;
+    line-height: 2.7rem;
+    margin-bottom: 2.7rem; }
