@@ -71,8 +71,8 @@ html
 	width: 100%
 	height: 6175px
 	opacity: 0.3
-	// z-index: 10
-	display: block
+	z-index: 10
+	display: none
 
 .container
   position: relative
@@ -465,12 +465,172 @@ html
         font-size: 1.4rem
         margin-top: 0.6rem
 
-
-    
-    
-      
-
-
-        
-
-
+.footer
+  background-color: #343434
+  padding-bottom: 11.5rem
+  .container
+    flex-wrap: wrap
+  .mini-caption
+    padding-top: 13.5rem
+    width: 100%
+    text-align: center
+    color: #f7ac53
+    @include opensemi
+    font-size: 1.4rem
+    line-height: 4rem
+    text-transform: uppercase
+    position: relative
+    &::before
+      content: ''
+      position: absolute
+      top: 0
+      left: 50%
+      width: 2px
+      height: 126px
+      background-color: #f7ac53
+  h2
+    width: 100%
+    text-align: center
+    color: #ffffff
+    @include merrireg
+    font-size: 4rem
+    line-height: 6.5rem
+    margin-top: 1rem
+  .form
+    width: 750px
+    margin: 0 auto
+    margin-top: 7.5rem
+    background-color: #181818
+    display: flex
+    flex-wrap: wrap
+    justify-content: space-between
+    padding: 0 5.7rem
+    padding-top: 5.1rem
+    .form-input
+      position: relative
+      width: 43%
+      margin-bottom: 4.8rem
+      label
+        position: absolute
+        top: 8px
+        left: 0
+        color: #ffffff
+        @include openreg
+        font-size: 1.4rem
+        text-transform: uppercase
+        transition: all 0.5s
+      input
+        width: 100%
+        height: 51px
+        background-color: transparent
+        border: none
+        border-bottom: 2px solid #5c5c5c
+        color: #ffffff
+        @include openreg
+        font-size: 1.4rem
+        transition: all 0.5s
+        &:focus ~ label
+          color: #f7ac53
+          font-size: 1.1rem
+          transform: translateY(-1.2rem)
+    .form-textarea
+        position: relative
+        width: 100%
+        margin-bottom: 4.8rem
+        label
+          position: absolute
+          top: 35px
+          left: 0
+          color: #ffffff
+          @include openreg
+          font-size: 1.4rem
+          text-transform: uppercase
+          transition: all 0.5s
+        textarea
+          width: 100%
+          height: 80px
+          padding: 1.5rem 0
+          background-color: transparent
+          border: none
+          border-bottom: 2px solid #5c5c5c
+          resize: none
+          color: #ffffff
+          @include openreg
+          font-size: 1.4rem
+          transition: all 0.5s
+          &:focus ~ label
+            color: #f7ac53
+            font-size: 1.1rem
+            transform: translateY(-3.5rem)
+    .form-submit
+      width: 100%
+      text-align: center
+      padding-top: 0.2rem
+      padding-bottom: 6rem
+      button
+        width: 220px
+        height: 60px
+        background-color: #f7ac53
+        border: none
+        color: #232323
+        @include opensemi
+        font-size: 1.7rem
+        text-transform: uppercase
+        cursor: pointer
+        img
+          margin-left: 0.5rem
+  .bottom-contacts
+    display: flex
+    align-items: flex-start
+    width: 100%
+    margin-top: 12.2em
+    padding: 0 21.2rem
+    .address-block
+      margin-left: 5.1rem
+      .title
+        color: #ffffff
+        @include opensemi
+        font-size: 1.4rem
+        line-height: 1.2rem
+        text-transform: uppercase
+      .desc
+        color: #bababa
+        @include opensemi
+        font-size: 1.4rem
+        line-height: 2.7rem
+        margin-top: 2rem
+    .second
+      margin-left: 7.6rem
+  .contacts
+    padding-left: 9rem
+    .title
+      color: #ffffff
+      @include opensemi
+      font-size: 1.4rem
+      line-height: 1.2rem
+      text-transform: uppercase
+      margin-bottom: 2.4rem
+    .mail
+      display: inline-block
+      color: #bababa
+      @include openreg
+      font-size: 1.4rem
+    .social
+      margin-top: 3.1rem
+      padding-left: 0.2rem
+      list-style-type: none
+      li
+        display: inline-block
+        &:last-child
+          a
+            margin-right: 0
+        a
+          display: inline-block
+          width: 20px
+          height: 20px
+          margin-right: 1rem
+          svg
+            width: 100%
+            height: 100%
+            path
+              fill: #bababa
