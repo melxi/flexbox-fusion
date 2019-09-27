@@ -10,12 +10,8 @@ $(document).ready(function () {
     effect: 'fade',
     loop: true
   })
-});
 
-$(document).ready(function () {
-  //initialize swiper when document ready
   var mySwiper = new Swiper ('.swiper-container1', {
-    // Optional parameters
     slidesPerView: 1,
     pagination: {
     	el: '.swiper-pagination1',
